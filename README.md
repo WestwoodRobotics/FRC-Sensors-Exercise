@@ -1,22 +1,44 @@
-# MAXSwerve Java Template v2023.1
+# FRC Sensor Exercise Repository
 
-See [the online changelog](https://github.com/REVrobotics/MAXSwerve-Java-Template/blob/main/CHANGELOG.md) for information about updates to the template that may have been released since you created your project.
+## Overview
 
-## Description
+Welcome to the FRC Sensor Exercise Repository! This repository is designed to help new students learn how to work with various sensors using WPILib. The sensors covered in this repository include IMUs, Encoders, Limit Switches, Beam Breaks, and Distance Sensors.
 
-A template project for an FRC swerve drivetrain that uses REV MAXSwerve Modules.
+## Getting Started
 
-Note that this is meant to be used with a drivetrain composed of four MAXSwerve Modules, each configured with two SPARKS MAX, a NEO as the driving motor, a NEO 550 as the turning motor, and a REV Through Bore Encoder as the absolute turning encoder.
+To get started, follow these steps:
 
-To get started, make sure you have calibrated the zero offsets for the absolute encoders in the Hardware Client using the `Absolute Encoder` tab under the associated turning SPARK MAX devices.
+1. Clone the repository to your local machine.
+2. Open the project in your preferred IDE (e.g., VS Code).
+3. Explore the `src/main/java/frc/robot/sensors` directory to find the sensor implementation files.
+4. Each sensor file contains TODOs and necessary imports to guide you through the implementation process.
 
-## Prerequisites
+## Sensors
 
-* SPARK MAX Firmware v1.6.2 - Adds features that are required for swerve
-* REVLib v2023.1.2 - Includes APIs for the new firmware features
+### IMU (Inertial Measurement Unit)
 
-## Configuration
+The IMU sensor provides information about the robot's orientation and angular velocity. It is commonly used for tasks such as balancing and navigation.
 
-It is possible that this project will not work for your robot right out of the box. Various things like the CAN IDs, PIDF gains, chassis configuration, etc. must be determined for your own robot!
+### Encoder
 
-These values can be adjusted in the `Constants.java` file.
+Encoders are used to measure the rotational position and speed of a motor shaft. They are essential for precise control of motor movements.
+
+### Limit Switch
+
+Limit switches are used to detect the presence or absence of an object. They are often used for safety and position detection in robotic mechanisms.
+
+### Beam Break
+
+Beam break sensors detect the interruption of a light beam. They are commonly used for object detection and counting applications.
+
+### Distance Sensor
+
+Distance sensors measure the distance between the sensor and an object. They are useful for obstacle detection and navigation.
+
+## Contributing
+
+We welcome contributions from the community! If you have any improvements or new sensor implementations, feel free to open a pull request.
+
+## License
+
+This repository is licensed under the [BSD 3-Clause License](LICENSE.txt).
