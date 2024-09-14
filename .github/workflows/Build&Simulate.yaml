@@ -12,6 +12,9 @@ jobs:
       - name: Grant execute permission # just in case
         run: chmod +x gradlew
 
+      - name: Regenerate Gradle Wrapper
+        run: ./gradlew wrapper
+        
       - name: Build Robot Code
         run: ./gradlew build
     
