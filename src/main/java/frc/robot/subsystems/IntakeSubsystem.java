@@ -48,6 +48,7 @@ public class IntakeSubsystem extends SubsystemBase {
     public double getVelocity() {
         // TODO: Implement the method to get the velocity of the intake motor using the encoder
         // Hint: Use the getVelocity() method from the RelativeEncoder class
+        return 0.0;
 
     }
 }
